@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Guide to the Wōdlund Tongue</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0ea;
+    --text: #3a3530;
+    --heading: #2a2520;
+    --label: #7a7068;
+    --ipa: #5a5048;
+    --say: #4a4038;
+    --border: #d4cbbf;
+    --link: #7a7068;
+    --link-hover: #4a4038;
+    --letter: #7a7068;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1714;
+      --text: #d4cbbf;
+      --heading: #e8dfd3;
+      --label: #8a7e70;
+      --ipa: #b0a494;
+      --say: #c8b89c;
+      --border: #3a332b;
+      --link: #8a7e70;
+      --link-hover: #c8b89c;
+      --letter: #8a7e70;
+    }
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', 'Crimson Pro', Georgia, serif;
+    font-weight: 300;
+    font-size: 1.9rem;
+    letter-spacing: 0.08em;
+    color: var(--heading);
+    margin-bottom: 0.5rem;
+  }
+
+  .letter {
+    font-family: 'Cormorant Garamond', 'Crimson Pro', Georgia, serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: var(--letter);
+    letter-spacing: 0.1em;
+    margin-top: 2.5rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .letter:first-of-type {
+    margin-top: 0;
+  }
+
+  .entry {
+    margin-bottom: 1.2rem;
+    padding: 0.6rem 0;
+    scroll-margin-top: 2rem;
+  }
+
+  .entry + .entry {
+    border-top: 1px solid var(--border);
+  }
+
+  .letter + .entry {
+    border-top: none;
+  }
+
+  .term {
+    font-family: 'Cormorant Garamond', 'Crimson Pro', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    color: var(--heading);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.6rem;
+  }
+
+  .pronunciation-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .label {
+    font-variant: small-caps;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--label);
+  }
+
+  .ipa {
+    font-style: italic;
+    color: var(--ipa);
+  }
+
+  .say {
+    color: var(--say);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--link);
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--link-hover);
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 2rem 1.2rem; font-size: 16px; }
+    h1 { font-size: 1.5rem; }
+    .term { font-size: 1.2rem; }
+    .letter { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>A Guide to the Wōdlund Tongue</h1>
+  </header>
+
+  <div class="letter">A</div>
+
+  <div class="entry" id="agnanail">
+    <div class="term">Agnanáil</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌaɡ.nəˈnaːl/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">AG-nuh-NAHL</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="the-andian">
+    <div class="term">The Andiān</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈɑːn.di.eɪn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">AHN-dee-Ayn</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="ani-alael">
+    <div class="term">Aní-aʿlāel</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ʔa.ˈniː.aʕ.laɪl/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">ah-NEE-ah'-LYLE</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="ardurundan">
+    <div class="term">Ardurúndan</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ɑr.duː.ˈruːn.dən/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">ar-doo-ROON-den</span></span>
+    </div>
+  </div>
+
+  <div class="letter">B</div>
+
+  <div class="entry" id="bendithel">
+    <div class="term">Bendithél</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈbɛn.dɪ.ˌθɛl/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">BEN-dih-Thel</span></span>
+    </div>
+  </div>
+
+  <div class="letter">C</div>
+
+  <div class="entry" id="captain-neeman-oreid">
+    <div class="term">Captain Neeman O'rEid</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/nɛɪˈeɪ.mɑn oʊˈreɪd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">neh-AY-mahn oh-RAYD</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="coriontas">
+    <div class="term">Coriontas</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌkɔr.iˈɒn.tɑːs/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Kor-ee-ON-tahs</span></span>
+    </div>
+  </div>
+
+  <div class="letter">D</div>
+
+  <div class="entry" id="dread-lord-sarrouk">
+    <div class="term">Dread Lord Šarrouk</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈʃar.ruːk/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">SHAHR-rook</span></span>
+    </div>
+  </div>
+
+  <div class="letter">E</div>
+
+  <div class="entry" id="eotenshire">
+    <div class="term">Eotenshire</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈiː.oʊ.tɛn.ʃaɪr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">EE-oh-ten-shyre</span></span>
+    </div>
+  </div>
+
+  <div class="letter">F</div>
+
+  <div class="entry" id="faeaiti">
+    <div class="term">Faeäiti</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfeɪ.æɪ.ti/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FAY-ay-tee</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="faeferia">
+    <div class="term">Faeferia</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/feɪ.ˈfɛr.i.ə/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">fay-FER-ee-ah</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="faelicht-forest">
+    <div class="term">Faelicht Forest</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfeɪ.lɪxt ˈfɔː.rəst/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FAY-likht</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="the-feifyren">
+    <div class="term">The Feifýren</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌfeɪ.ˈfiː.ren/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Fay-FEE-ren</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="ferumen">
+    <div class="term">Ferumen</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfɛ.ɹʊ.mɛn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FEH-roo-men</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="fianharp">
+    <div class="term">fianharp</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfiː.ən.hɑːrp/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FEE-un-harp</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="forrumir-vale">
+    <div class="term">Forrumir Vale</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfoːr.rə.miːr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FOR-ruh-meer</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="fyr-keeper">
+    <div class="term">Fýr-Keeper</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfiːr.kiːp.ər/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FEER-keep-er</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="fyr-monk">
+    <div class="term">Fýr-Monk</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfiːr.mʌŋk/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FEER-munk</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="fyrnnar-forest">
+    <div class="term">Fyrnnar Forest</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfɪrn.nɑːr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FIRN-nahr</span></span>
+    </div>
+  </div>
+
+  <div class="letter">G</div>
+
+  <div class="entry" id="gadolrun">
+    <div class="term">Gadólrun</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ɡaˈdol.ruːn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">gah-DOHL-roon</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="guwen-oreid">
+    <div class="term">Guwen O'rEid, the High Elder</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈɡu.wɛn oʊˈreɪd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">GOO-wen oh-RAYD</span></span>
+    </div>
+  </div>
+
+  <div class="letter">H</div>
+
+  <div class="entry" id="the-haiiasi">
+    <div class="term">The Hai'iási</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌhaɪ.i.ˈɑː.si/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Hai-ee-AH-see</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="hai-wodlund">
+    <div class="term">Hai-Wōdlund</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌhaɪ ˈwoːd.lund/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Hai WOHD-lund</span></span>
+    </div>
+  </div>
+
+  <div class="letter">K</div>
+
+  <div class="entry" id="king-amaramod">
+    <div class="term">King Amáramōd</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ə.ˈmɑ.rə.moːd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">ah-MAH-rah-mohd</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="king-beathawod">
+    <div class="term">King Beáthawōd</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/bɛ.ˈɑ.θɑ.woːd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">beh-AH-thah-wohd</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="king-corkara">
+    <div class="term">King Corkára</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌkɔrˈkɑː.rɑ/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Kor-KAH-rah</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="king-sarmod">
+    <div class="term">King Šarmōd</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈʃɑr.moːd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">SHAHR-mohd</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="king-wodari">
+    <div class="term">King Wodári</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌwo.ˈdɑ.riː/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Woh-DAH-ree</span></span>
+    </div>
+  </div>
+
+  <div class="letter">L</div>
+
+  <div class="entry" id="lasairel">
+    <div class="term">Lasáïrel</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/la.ˈsa.iːr.ˌɛl/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">la-SA-eer-El</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="lasaireth">
+    <div class="term">Lasáïreth</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/la.ˈsa.iːr.ˌɛθ/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">la-SA-eer-Eth</span></span>
+    </div>
+  </div>
+
+  <div class="letter">M</div>
+
+  <div class="entry" id="the-manolach">
+    <div class="term">The Manólach</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/mɑːˈnoː.lɑx/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">mah-NOH-lakh</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="miraev-elu">
+    <div class="term">Míræv-elû</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈmiːr.æːv.e.ˌluː/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">MEER-ăv-eh-LOO</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="moideoran">
+    <div class="term">Móideo'rān</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌmoː.ðʲə.oˈreɪːn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Moh-thuh-oh-RAYN</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="moidewold">
+    <div class="term">Móidewold</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈmoː.ðʲə.wəʊld/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">MOH-thuh-wold</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="mount-serarut">
+    <div class="term">Mount Serarut</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈsɛ.ɾɑ.ɾuːt/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">SEH-rah-root</span></span>
+    </div>
+  </div>
+
+  <div class="letter">O</div>
+
+  <div class="entry" id="olamara">
+    <div class="term">Olam'ára</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/o.lam.ˈɑː.ra/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">oh-lahm-AH-rah</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="the-orentir-ridges">
+    <div class="term">The O'rEntir Ridges</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/oːɾ ˈɛn.tɪɾ/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">ohr EN-teer</span></span>
+    </div>
+  </div>
+
+  <div class="letter">P</div>
+
+  <div class="entry" id="palaaewan">
+    <div class="term">Palaæván</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌpɑ.lɑː.æ.ˈvɑːn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Pah-lah-ah-VAHN</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="prince-anmordal">
+    <div class="term">Prince Anmórdal</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌɑːn.ˈmor.dɑl/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Ahn-MOR-dahl</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="prince-caelurun">
+    <div class="term">Prince Caelurún</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌkaɪ.lu.ˈruːn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Kai-lu-ROON</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="prince-mirdileas">
+    <div class="term">Prince Mirdíleas</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌmiːr.ˈtiː.ljəs/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Meer-TEE-lyas</span></span>
+    </div>
+  </div>
+
+  <div class="letter">R</div>
+
+  <div class="entry" id="raav-hoshekh">
+    <div class="term">Raʿáv Hoshekh, The Darkness</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/rɑ.ˈɑːv ˈhoː.ʃɛx/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">rah-AHV HO-shekh</span></span>
+    </div>
+    <div class="pronunciation-row" style="margin-top: 0.6rem;">
+      <span><span class="label">also called</span>&ensp;<span class="say">Ha Raʿáv</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ha raʕˈʕaːv/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">hah rah-AHV</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="raediana-eilifr-ast">
+    <div class="term">Rædiána Eilifr-ast</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈrɑːd.i.a.na ˈɛɪ.liːvr.aːst/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">RAHD-ee-AH-nah AY-leevr-ahst</span></span>
+    </div>
+    <div class="pronunciation-row" style="margin-top: 0.6rem;">
+      <span><span class="label">also called</span>&ensp;<span class="say">Ræía</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌrɑː.ˈiː.a/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Rah-EE-ah</span></span>
+    </div>
+  </div>
+
+  <div class="letter">S</div>
+
+  <div class="entry" id="santi">
+    <div class="term">Sánti</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈsɑːn.ti/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">SAHN-tee</span></span>
+    </div>
+  </div>
+
+  <div class="letter">T</div>
+
+  <div class="entry" id="taivas-heitrun-tirtek">
+    <div class="term">Taivas Heitrun Tírtek</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈtɑi.vɑs ˈheit.ruːn ˈtiːr.tek/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">TY-vahs HAYT-roon TEER-tek</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="tarcmere">
+    <div class="term">Tarcmere</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈtɑrk.meːr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">TARK-mayr</span></span>
+    </div>
+  </div>
+
+  <div class="letter">U</div>
+
+  <div class="entry" id="usko-raksugach">
+    <div class="term">Usko Raksugach</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈusko ˈrɑksuɡəx/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">OOS-koh RAHK-soo-gukh</span></span>
+    </div>
+  </div>
+
+  <div class="letter">V</div>
+
+  <div class="entry" id="verinor-novumir">
+    <div class="term">Verinor Novumír</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈvɛr.ɪ.nɔr ˈnoʊ.vuː.ˌmiːr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">VEHR-ih-nor NOH-voo-Meer</span></span>
+    </div>
+  </div>
+
+  <div class="letter">W</div>
+
+  <div class="entry" id="wilderin-wightwood">
+    <div class="term">Wilderin Wightwood</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwɪl.də.rɪn ˈwaɪt.wʊd/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WIL-duh-rin WYTE-wood</span></span>
+    </div>
+    <div class="pronunciation-row" style="margin-top: 0.6rem;">
+      <span><span class="label">also called</span>&ensp;<span class="say">Wilderin the Wyldeheart</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwɪl.də.rɪn ðə ˈwaɪl.dəˌhɑːrt/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WIL-duh-rin the WILE-deh-hart</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="wod-cats">
+    <div class="term">Wōd-cats</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwoːd.kæts/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WODE-cats</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="the-wodakra-uplands">
+    <div class="term">The Wōdákra Uplands</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˌwoː.ˈdɑː.krɑ ˈʌp.ləndz/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">Woh-DAH-krah UHP-lundz</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="wodelaeg">
+    <div class="term">wōdelæg</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwoː.de.læːɡ/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WOH-de-lahg</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="the-wodervin">
+    <div class="term">The Wōdervin</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwoː.dɛr.vɪn/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WOH-dehr-vin</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="wyldelynxes">
+    <div class="term">Wyldelynxes</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈwaɪl.dəˌlɪŋks.ɪz/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">WILE-deh-LINK-siz</span></span>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>

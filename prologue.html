@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Guide to the Wōdlund Tongue</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0ea;
+    --text: #3a3530;
+    --heading: #2a2520;
+    --label: #7a7068;
+    --ipa: #5a5048;
+    --say: #4a4038;
+    --border: #d4cbbf;
+    --link: #7a7068;
+    --link-hover: #4a4038;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1714;
+      --text: #d4cbbf;
+      --heading: #e8dfd3;
+      --label: #8a7e70;
+      --ipa: #b0a494;
+      --say: #c8b89c;
+      --border: #3a332b;
+      --link: #8a7e70;
+      --link-hover: #c8b89c;
+    }
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', 'Crimson Pro', Georgia, serif;
+    font-weight: 300;
+    font-size: 1.9rem;
+    letter-spacing: 0.08em;
+    color: var(--heading);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--label);
+    letter-spacing: 0.03em;
+  }
+
+  .entry {
+    margin-bottom: 1.2rem;
+    padding: 0.6rem 0;
+    scroll-margin-top: 2rem;
+  }
+
+  .entry + .entry {
+    border-top: 1px solid var(--border);
+  }
+
+  .term {
+    font-family: 'Cormorant Garamond', 'Crimson Pro', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    color: var(--heading);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.6rem;
+  }
+
+  .pronunciation-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .label {
+    font-variant: small-caps;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--label);
+  }
+
+  .ipa {
+    font-style: italic;
+    color: var(--ipa);
+  }
+
+  .say {
+    color: var(--say);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--label);
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--say);
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 2rem 1.2rem; font-size: 16px; }
+    h1 { font-size: 1.5rem; }
+    .term { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>A Guide to the Wōdlund Tongue</h1>
+  </header>
+
+  <div class="entry" id="faelicht-forest">
+    <div class="term">Faelicht Forest</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfeɪ.lɪxt ˈfɔː.rəst/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FAY-likht</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="forrumir-vale">
+    <div class="term">Forrumir Vale</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈfoːr.rə.miːr/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">FOR-ruh-meer</span></span>
+    </div>
+  </div>
+
+  <div class="entry" id="miraev-elu">
+    <div class="term">Míræv-elû</div>
+    <div class="pronunciation-row">
+      <span><span class="label">ipa</span>&ensp;<span class="ipa">/ˈmiːr.æːv.e.ˌluː/</span></span>
+    </div>
+    <div class="pronunciation-row">
+      <span><span class="label">say</span>&ensp;<span class="say">MEER-ăv-eh-LOO</span></span>
+    </div>
+  </div>
+
+  <div>
+    <a href="javascript:history.back()" class="back-link">← return to the story</a>
+  </div>
+
+</div>
+</body>
+</html>
